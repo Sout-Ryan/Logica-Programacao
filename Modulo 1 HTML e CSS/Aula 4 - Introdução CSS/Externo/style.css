@@ -1,0 +1,39 @@
+/*a ordem do css deve seguir a ordem do index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap'); /*Importa uma fonte externa*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aliceblue; /*muda a cor da pagina*/
+}
+
+header {
+    background-color: bisque; /*muda a cor do menu de navegação*/
+}
+
+main {
+    font-size: 16px;
+}
+
+h1, h2 {
+    text-align: center; /*centralizar o texto*/
+}
+
+p {
+    font-family: "Barrio", system-ui; /*Escolher a fonte do texto*/
+    text-align: justify; /**/
+    line-height: 3; /*Espaçaento entrea as linhas*/
+    letter-spacing: 10px; /*Espaçamento entre as letras ex: r y a n */
+    text-indent: 30px; /*Adiciona um paragrafo*/
+    color:rgb(0, 68, 32) /*Muda a cor da fonte*/
+}
+
+a {
+    text-decoration: none; /*remove _____ dos hyperlink*/
+    color: black; /*Muda a cor dos hyperlink*/
+    font-size: 16px; /**/
+}

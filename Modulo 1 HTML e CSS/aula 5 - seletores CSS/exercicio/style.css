@@ -1,0 +1,63 @@
+body {
+    margin: auto;
+    width: 50vw
+}
+
+#destinos-incriveis {
+    font-size: 36px;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#titulo1 {
+    font-size: 28px;
+    color: #e74c3c;
+    background-color: #f9ebea;
+}
+
+#maravilhas-naturais {
+    font-size: 36px;
+    color: #27ae60;
+    background-color: #e9f7ef;
+    text-align: center;
+}
+
+#titulo2 {
+    font-size: 28px;
+    color: #27ae60;
+    background-color: #e9f7ef;
+}
+
+#cidades-vibrantes {
+    font-size: 36px;
+    color: #f39c12;
+    background-color: #fff3e6;
+    text-align: center;
+}
+
+#titulo3 {
+    font-size: 28px;
+    color: #f39c12;
+    background-color: #fff3e6;
+}
+
+#experiencia-culturais {
+    font-size: 36px;
+    color: #8e44ad;
+    background-color: #f5e6f5;
+    text-align: center;
+}
+
+#titulo4 {
+    font-size: 28px;
+    color: #8e44ad;
+    background-color: #f5e6f5;
+}
+
+p {
+    font-size: 1em;
+    color: #34495e;
+    text-align: justify;
+    line-height: 1.4;
+}

@@ -1,0 +1,37 @@
+body {
+    background-color: rgba(146, 146, 146, 0.25);
+}
+main {
+    width: 50vw;
+    margin: auto;
+}
+
+#titulo1 {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.texto-titulo1 {
+    color:rgba(165, 42, 42, 0.7)
+}
+
+#titulo2 {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.texto-titulo2 {
+    color:rgba(255, 127, 80, 0.7);
+}
+
+#titulo3 {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.texto-titulo3 {
+    color: rgba(139, 0, 139, 0.7);
+}
