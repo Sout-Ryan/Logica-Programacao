@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio (Aula - 15)</title>
+    <style>
+        * {
+            text-align: center;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px;
+            transition: 0.1s;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        .buttonMostrarTodos:hover {
+            background-color: rgb(190, 255, 190);
+        }
+
+        .buttonApenasAprovado:hover {
+            background-color: rgb(255, 230, 190);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Alunos e Notas</h1>
+        <div>
+            <!-- Nome -->
+            <label for="nome">Nome Aluno:</label>
+            <input id="nome" type="text" placeholder="Nome">
+            <!-- Nota -->
+            <label for="nota">Nota:</label>
+            <input id="nota" type="number" placeholder="Nota">
+            
+            <button onclick="capturar()">Enviar</button>
+        </div>
+
+        <div>
+            <!-- Mostrar todos alunos -->
+            <button class="buttonMostrarTodos" onclick="mostrarTodos()">Mostrar todos</button>
+            <!-- Mostrar apenas aprovado -->
+            <button class="buttonApenasAprovado" onclick="apenasAprovado()">Apenas aprovado</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
