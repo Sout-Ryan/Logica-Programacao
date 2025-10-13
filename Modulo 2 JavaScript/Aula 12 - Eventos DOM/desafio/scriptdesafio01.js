@@ -1,10 +1,3 @@
-// pegar nota  1
-// pegar nota 2
-// calcular a media
-// exibir ao clicar no butão
-
-
-
 function calcularMedia(){    
     let nota1 = document.getElementById("nota1")
     let nota2 = document.getElementById("nota2")
