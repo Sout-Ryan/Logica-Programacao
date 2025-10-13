@@ -27,29 +27,29 @@
             background-color: rgb(255, 230, 190);
         }
     </style>
+    <script src="script.js" defer></script>
 </head>
-
 <body>
     <main>
         <h1>Alunos e Notas</h1>
         <div>
             <!-- Nome -->
             <label for="nome">Nome Aluno:</label>
-            <input id="nome" type="text" placeholder="Nome">
+            <input id="nome" type="text" placeholder="Nome" required>
             <!-- Nota -->
             <label for="nota">Nota:</label>
-            <input id="nota" type="number" placeholder="Nota">
-            
+            <input id="nota" type="number" placeholder="Nota" required>
+            <!-- Capturar -->
             <button onclick="capturar()">Enviar</button>
         </div>
-
         <div>
             <!-- Mostrar todos alunos -->
             <button class="buttonMostrarTodos" onclick="mostrarTodos()">Mostrar todos</button>
             <!-- Mostrar apenas aprovado -->
             <button class="buttonApenasAprovado" onclick="apenasAprovado()">Apenas aprovado</button>
+
+            <button class="buttonApenasReprovado" onclick="apenasReprovado()">Apenas aprovado</button>
         </div>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
