@@ -38,10 +38,44 @@
                     $sql = "SELECT * FROM usuarios WHERE email = ?";
                     $stmt = $conn->prepare($sql);
 
-                    if ($stmt   ){
-                        $stmt_->bind_param("s", $email);
+                    if ($stmt) {
+                        $stmt->bind_param("s", $email);
                         $stmt->execute();
-                        echo $stmt->get_result()-> fetch_assoc;
+                        $resultado = $stmt->get_result();
+
+                        if ($result->num_rows > 0){
+                            $row = resultao->fecth_assoc();
+                            echo "
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nome</th>
+                                        <th>Sobrenome</th>
+                                        <th>E-mail</th>
+                                        <th>Excluir</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>{$row['id']}</td>
+                                        <td>{$row['nome']}</td>
+                                        <td>{$row['sobrenome']}</td>
+                                        <td>{$row['email']}</td>
+                                        <td>
+                                            <form action='excluirCadastro.php' method='post'>
+                                                <input type='hidden' name='id' value='{$row['id']}'>
+                                                <input type='submit' id='btn-excluir' value='&#x1f5d1'>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            "
+                        } else {
+                            echo "<div class='mensagem erro'>E-mail $email não encontrado</div>";
+                        }   
                     }
                 }
             ?>
