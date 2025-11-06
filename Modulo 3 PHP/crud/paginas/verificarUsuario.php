@@ -14,7 +14,7 @@
             <ul>
                 
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Cadastrar Usuário</a></li>
+                <li><a href="cadastro;php">Cadastrar Usuário</a></li>
                 <li><a href="verificarUsuario.php">Procurar Usuário</a></li>
 
             </ul>
