@@ -14,8 +14,8 @@
             <ul>
                 
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="cadastro.php">Cadastrar Usuário</a></li>
-                <li><a href="#">Procurar Usuário</a></li>
+                <li><a href="#">Cadastrar Usuário</a></li>
+                <li><a href="verificarUsuario.php">Procurar Usuário</a></li>
 
             </ul>
         </nav>
@@ -75,15 +75,15 @@
     
             }
         }
-
-        catch (myswali_slqexception $e){
+        catch (mysqli_sql_exception $e){
             
-            if (str_contains(getMessege(), "Duplicate entry")) {
-                echo "<div class="'mensagem erro'">E-mail já cadastrado</div>";
+            if (str_contains($e->getMessage(), "Duplicate entry")) {
+                echo "<div class='mensagem erro'>E-mail já está cadastrado </div>";
+            } else {
+                echo "<div class='mensagem erro'>Erro ao cadastrar, Tente novamente mais tarde</div>";
+
             }
-            else {
-                echo "<div class="'mensagem erro'">Erro ao cadastrar, tente novamente mais tarde</div>";
-            }
+           
         }
 
         
